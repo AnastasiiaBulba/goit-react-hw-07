@@ -24,7 +24,9 @@ const ContactForm = () => {
           <Field type="text" name="number" />
           <ErrorMessage name="number" component="div" />
         </div>
-        <button type="submit">Add Contact</button>
+        <button className={css.button} type="submit">
+          Add Contact
+        </button>
       </Form>
     </Formik>
   );
