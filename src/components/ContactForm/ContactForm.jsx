@@ -13,16 +13,16 @@ const ContactForm = () => {
 
   return (
     <Formik initialValues={{ name: "", number: "" }} onSubmit={handleSubmit}>
-      <Form>
+      <Form className={css.contactForm}>
         <div>
           <label>Name</label>
           <Field type="text" name="name" />
-          <ErrorMessage name="name" component="div" />
+          <ErrorMessage name="name" component="div" className={css.error} />
         </div>
         <div>
           <label>Phone</label>
           <Field type="text" name="number" />
-          <ErrorMessage name="number" component="div" />
+          <ErrorMessage name="number" component="div" className={css.error} />
         </div>
         <button className={css.button} type="submit">
           Add Contact

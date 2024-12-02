@@ -54,7 +54,8 @@ const contactsSlice = createSlice({
   },
 });
 
-export const { setFilter } = contactsSlice.actions; // Експортуємо екшн для фільтрації
+// Експортуємо екшн для фільтрації
+export const { setFilter } = contactsSlice.actions;
 
 // Мемоізований селектор для фільтрації контактів
 export const selectFilteredContacts = (state) => {

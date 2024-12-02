@@ -6,7 +6,8 @@ import css from "./ContactList.module.css";
 
 const ContactList = () => {
   const dispatch = useDispatch();
-  const contacts = useSelector(selectFilteredContacts); // мемоізація
+  // мемоізація
+  const contacts = useSelector(selectFilteredContacts);
 
   return (
     <ul className={css.list}>

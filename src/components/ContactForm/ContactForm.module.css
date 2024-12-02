@@ -1,11 +1,16 @@
 .contactForm {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   gap: 10px;
   max-width: 300px;
   margin-bottom: 20px;
   width: 100%;
 }
+
+/* .wrap {
+  padding-top: 10px;
+} */
 
 .contactForm label {
   font-weight: bold;
@@ -35,6 +40,8 @@
   width: 200px;
   font-size: 14px;
   margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 6px 12px;
   transition: background-color 0.3s ease;
 }
