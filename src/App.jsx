@@ -24,8 +24,9 @@ function App() {
       <h1>Phonebook</h1>
       {isLoading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
-      <SearchBox />
+
       <ContactForm />
+      <SearchBox />
       <ContactList />
     </div>
   );
